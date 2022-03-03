@@ -100,17 +100,31 @@ Important! Inputul pentru aceasta cerinta are alta structura decat cel primit pe
 doua, intrucat vor trebui specificate cele doua hosturi care trebuie sa comunice. Puteti vedea struc-
 tura input-urilor in sectiunea dedicata.
 Urmatoarele doua exemple sunt pentru reteaua descrisa in cerinta.
+
 Exemplul 1 - comunicare sigura
+
 // Input:
+
 0
+
 2
+
 hello
+
 // Output:
+
 hello
+
 Exemplul 2 - comunicare nesigura
+
 // Input:
+
 0
+
 10
+
 rovvy
+
 // Output:
+
 hello
