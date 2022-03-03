@@ -33,15 +33,25 @@ graful asociat.
 Matricea de adiacenta pentru reteaua de mai sus este urmatoarea:
 
 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+
 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+
 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0
+
 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0
+
 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0
+
 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
+
 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0
+
 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0
+
 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0
+
 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+
 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
 
 Exemplu: pentru reteaua de mai sus, se va afisa pe consola:
