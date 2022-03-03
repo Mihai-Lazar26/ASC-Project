@@ -55,7 +55,9 @@ Matricea de adiacenta pentru reteaua de mai sus este urmatoarea:
 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
 
 Exemplu: pentru reteaua de mai sus, se va afisa pe consola:
+
 switch malitios index 6: controller index 3; controller index 8;
+
 switch malitios index 9: controller index 3; host index 10;
 
 Plecand din primul echipament din retea (i.e. din echipamentul cu index 0), sa se afiseze toate
@@ -66,15 +68,23 @@ intereseaza) intre oricare doua echipamente.
 Se va aplica algoritmul BFS, care utilizeaza o coada. Pentru a nu ne complica foarte tare
 prin eliminarea elementelor din coada, putem sa avem un array care doar creste, si indexul curent
 la care am ajuns, considerand ca elementele de la stanga au fost "eliminate". De exemplu, pentru
+
 queue = [0, 2, 1, 3, 4, 6, 7]
+
 queueIndex = 2
+
 queueLength = 7
+
 inseamna ca elementul curent din coada este 1. Nu eliminam elementul ca sa scapam de el, ci
 pur si simplu facem un queueIndex := queueIndex + 1. Pentru a adauga elemente, le punem la
 final (ne asiguram ca am declarat suficient spatiu pentru queue) si incrementam queueLength-ul.
+
 Exemplu: pentru reteaua de mai sus, se va afisa pe consola:
+
 host index 0; host index 1; host index 5; host index 10;
+
 Yes
+
 cu explicatia ca, plecand din host index 0, atunci il consideram si pe el ca fiind host accesibil.
 Pana la celelalte trei host-uri, este evidenta conexiunea prin intermediul grafului de mai sus. Pe a
 doua linie se va scrie un mesaj Yes sau No, dupa cum toate echipamentele pot comunica, fara sa
