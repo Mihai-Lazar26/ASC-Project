@@ -68,3 +68,37 @@ Pana la celelalte trei host-uri, este evidenta conexiunea prin intermediul grafu
 doua linie se va scrie un mesaj Yes sau No, dupa cum toate echipamentele pot comunica, fara sa
 tinem cont de faptul ca unele switch-uri pot fi sau nu malitioase.
 Important! Host-urile vor fi afisate in ordinea descoperirii lor prin parcurgerea in latime.
+
+Consideram 2 host-uri din retea care vor sa comunice intre ele. Aceasta comunicare se poate realiza
+fie pe un drum sigur, fie pe unul nesigur (este interpus in comunicare un switch malitios). In cazul
+in care drumul este sigur, mesajul transmis de host-ul sursa va ajunge intact la host-ul destinatie.
+Altfel, mesajul va fi modificat de catre switch-ul malitios, ajungand intr-o forma indescifrabila la
+destinatie.
+Administratorul retelei este totusi un adevarat specialist si, urmarind traficul de date reuseste,
+prin criptanaliza, sa descopere maniera in care switch-ul modifica mesajul. Switch-ul malitios preia
+mesajul original primit de la sursa si il cripteaza folosind cifrul Caesar cu deplasare 10. Mesajul
+criptat este apoi transmis catre destinatie. In cazul in mesajul trece prin 2 switch-uri malitioase,
+acestea comunica intre ele pentru a nu realiza amandoua criptarea.
+In contextul acesta, se introduc de la tastatura 2 host-uri si un mesaj format numai din literele
+mici ale alfabetului englez, reprezentand mesajul ce a ajuns in host-ul destinatie. Se cere sa se afiseze
+mesajul original transmis de sursa, avand in vedere faptul ca daca exista macar un drum sigur
+intre cele 2 host-uri, va fi ales acest drum sigur pentru realizarea comunicarii.
+
+Important! Inputul pentru aceasta cerinta are alta structura decat cel primit pentru primele
+doua, intrucat vor trebui specificate cele doua hosturi care trebuie sa comunice. Puteti vedea struc-
+tura input-urilor in sectiunea dedicata.
+Urmatoarele doua exemple sunt pentru reteaua descrisa in cerinta.
+Exemplul 1 - comunicare sigura
+// Input:
+0
+2
+hello
+// Output:
+hello
+Exemplul 2 - comunicare nesigura
+// Input:
+0
+10
+rovvy
+// Output:
+hello
