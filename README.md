@@ -31,6 +31,7 @@ informatie, sa se afiseze, la STANDARD OUTPUT (pe consola) toate echipamentele d
 sunt aceste echipamente si ce rol au in retea. Reprezentarea se va face exclusiv prin index-ul lor in
 graful asociat.
 Matricea de adiacenta pentru reteaua de mai sus este urmatoarea:
+
 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0
@@ -42,6 +43,7 @@ Matricea de adiacenta pentru reteaua de mai sus este urmatoarea:
 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0
 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
+
 Exemplu: pentru reteaua de mai sus, se va afisa pe consola:
 switch malitios index 6: controller index 3; controller index 8;
 switch malitios index 9: controller index 3; host index 10;
