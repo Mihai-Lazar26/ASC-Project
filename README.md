@@ -14,8 +14,8 @@ unde stim, pentru fiecare element in parte, ce rol are, astfel:
 • 4 - controller logic.
 Aceste informatii sunt stocate intr-un array de intregi, de forma:
 roles = [1, 1, 2, 4, 2, 1, 3, 2, 4, 3, 1]
-cu urmatoarea semnificatie: nodul 1 este, in prima imagine, un host, astfel ca il codicam prin
-rolul 1, identic al doilea nod, al treilea nod este un switch obisnuit, astfel ca il codicam prin rolul
+cu urmatoarea semnificatie: nodul 1 este, in prima imagine, un host, astfel ca il codificam prin
+rolul 1, identic al doilea nod, al treilea nod este un switch obisnuit, astfel ca il codificam prin rolul
 2. Se procedeaza analog cu restul nodurilor. Atentie! In imagine, numerotarea nodurilor a fost
 facuta de la 1, dar consideram ca, in implementare, nodurile sunt de la 0. Astfel, pentru n noduri
 date, vom avea indecsii de la 0 la n - 1.
