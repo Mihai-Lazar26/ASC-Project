@@ -8,10 +8,15 @@ care poate fi privita ca un graf
 ![image](https://user-images.githubusercontent.com/79991306/156546357-53a76030-74e8-4587-af26-3fbbcf6fb174.png)
 
 unde stim, pentru fiecare element in parte, ce rol are, astfel:
+
 • 1 - host;
+
 • 2 - switch;
+
 • 3 - switch malitios;
+
 • 4 - controller logic.
+
 Aceste informatii sunt stocate intr-un array de intregi, de forma:
 roles = [1, 1, 2, 4, 2, 1, 3, 2, 4, 3, 1]
 cu urmatoarea semnificatie: nodul 1 este, in prima imagine, un host, astfel ca il codificam prin
