@@ -21,3 +21,27 @@ facuta de la 1, dar consideram ca, in implementare, nodurile sunt de la 0. Astfe
 date, vom avea indecsii de la 0 la n - 1.
 Toate cerintele care vor fi formulate sunt cerinte care se pot rezolva utilizand cel mult array-uri
 de elemente intregi, NU vor fi necesare conceptele de functii si proceduri.
+
+Fie reteaua de mai sus reprezentata prin R = (G; roles), unde G este un graf dat prin matricea lui
+de adiacenta. Pentru a retine o matrice intr-un limbaj de asamblare, folosim aceeasi reprezentare
+ca la array-uri: o matrice este, in memorie, tot inlantuit alocata, doar ca in loc sa avem accesare
+prin intermediul unui singur index, avem accesare prin intermediul a doi indecsi. Avand aceasta
+informatie, sa se aseze, la STANDARD OUTPUT (pe consola) toate echipamentele de retea
+(nodurile) care sunt direct conectate la un switch malitios: la ce switch malitios sunt conectate, care
+sunt aceste echipamente si ce rol au in retea. Reprezentarea se va face exclusiv prin index-ul lor in
+graful asociat.
+Matricea de adiacenta pentru reteaua de mai sus este urmatoarea:
+0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0
+1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0
+0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0
+0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0
+0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0
+0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0
+0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0
+0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0
+0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1
+0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
+Exemplu: pentru reteaua de mai sus, se va asa pe consola:
+switch malitios index 6: controller index 3; controller index 8;
+switch malitios index 9: controller index 3; host index 10;
